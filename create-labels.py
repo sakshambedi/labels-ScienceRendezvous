@@ -16,7 +16,8 @@ shipping_font = shipping_charstyle.font
 shipping_font.name = 'Calibri (Body)'
 shipping_font.size = Pt(28)
 
-##rcpnt_name,rcpnt_title, rcpnt_school_name, rcpnt_adrress , rcpnt_city, rcpnt_postal_code
+# rcpnt_data_array contains the following information in the following order :
+# rcpnt_name,rcpnt_title, rcpnt_school_name, rcpnt_adrress , rcpnt_city, rcpnt_postal_code
 def edit_docx(rcpnt_data_array):
         
         reference_file = open(Path(os.getcwd(), 'assets', 'university_shipping_title.txt'), "r")
