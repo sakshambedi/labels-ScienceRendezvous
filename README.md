@@ -6,7 +6,14 @@ This script was created to automate the task for making shipping labels for Scie
 
 ### How to use :
 
-To use scrip you will need a Shipping.xslx file, a university_shipping_title.txt
+To use scrip you will need a Shipping.xslx file, a university_shipping_title.txt.
+The all the required packages are mentioned in the requirments folder.
+
+### Install Pre-requisites
+
+```bash
+pip3 install -r requirements.txt
+```
 
 ##### Shipping.xslx :
 
@@ -28,6 +35,14 @@ It is the file with all of the data that includes
 It is the file which includes the senders message for each shipping label.
 
 ![shipping_title.xlsx file image](./img/label_senders_message.png)
+
+### Running the script:
+
+==Note: The names of the files are hardcoded in the script, change those if you are using different filenames==
+
+```bash
+python3 create-labels.py
+```
 
 ### Result :
 
